@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>
+            My website
+        </title>
+
+        <style>
+          .row{
+            width: 720px;
+            /* margin:top right bottom left */ 
+            margin: 10px auto 10px auto;
+          }
+
+          .image-container{
+            display: table-cell;
+            vertical-align: middle;
+            padding: 20px;
+          }
+        </style>
+
+        <script src="'https://cdnjs.cloudflare.com/
+        ajax/libs/buzz/1.2.1/buzz.min.js">
+        </script>
+    </head>
+
+    <!-- <body style="background-color:rgb(37, 147, 147) ">
+        <h1>
+           Utopia of the Future
+         </h1>
+
+         <h2>
+           Icons 
+         </h2>
+
+         <p>
+           welcome to the site for my future and the icons that I'm thinking of using for the assignment
+        </p> -->
+
+        <!-- <img src="Img/Blue.png" height="500" width="500"> -->
+        <div class="row">
+          <div class="image-container"><img id="Img1" src="Img/Images/Caution.jpeg" width="100" onmouseover="this.src = 'img/Images/Caution.jpeg';" onmouseout="this.src = 'Img/Images/Danger_KeepOut.jpeg';"></div>
+          <div class="image-container"><img id="Img2" src="Img/Images/Exit Small.jpeg" width="100" onmouseover="this.src = 'Img/Images/Caution.jpeg';" onmouseout="this.src = 'Img/Images/Exit Small.jpeg';"></div>
+          <div class="image-container"><img id="Img3" src="Img/Images/Danger_KeepOut.jpeg" width= "100" onmousedown="this.src = 'Img/Images/Exit Small.jpeg';" onmouseup="this.src = 'Img/Images/Danger_KeepOut.jpeg';"></div>
+        </div>
+
+        <div class="row">
+          <div class="image-container"><img id="Img4" src="Img/Images/Exit Small.jpeg" width="100"></div>
+          <div class="image-container"><img id="Img5" src="Img/Images/Caution.jpeg" width="100"></div>
+          <div class="image-container"><img id="Img6" src="Img/Images/Caution.jpeg" width="100"></div>
+        </div>
+
+        <div class="row">
+          <div class="image-container"><img id="Img7" src="Img/Images/Caution.jpeg" width="100"></div>
+          <div class="image-container"><img id="Img8" src="Img/Images/Caution.jpeg" width="100"></div>
+          <div class="image-container"><img id="Img9" src="Img/Images/Caution.jpeg" width="100"></div>
+       </div>
+
+        <script>
+          var sound1 = new buzz.sound("Final sound/chess.mp3")
+          var sound2 = new buzz.sound("Img/Sound/Finalsound/Ding.mp3");
+          var sound3 = new buzz.sound("sound/popping.mp3");
+          var sound4 = new buzz.sound("Final sound/chess.mp3") 
+
+          window.onload = function() {
+            document.getElementById('Img1').addEventListener('mouseover', function () {sound4.play();});
+            document.getElementById('Img2').addEventListener('mouseover', function () {sound2.play();});
+            document.getElementById('Img3').addEventListener('mouseover', function () {sound3.play();});
+          };
+        </script>
+    </body>
+</html>
